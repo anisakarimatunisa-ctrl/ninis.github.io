@@ -9,7 +9,58 @@
             text-align: center;
             padding: 20px;
         }
+.form-pemesanan {
+            background-color: white;
+            max-width: 450px;
+            margin: 25px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 7px #ccd5c8;
+            text-align: left;
+        }
 
+        .form-pemesanan h3 {
+            color: #405744;
+            text-align: center;
+        }
+
+        .form-pemesanan label {
+            display: block;
+            margin-top: 12px;
+            color: #405744;
+        }
+
+        .form-pemesanan select,
+        .form-pemesanan input,
+        .form-pemesanan textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #cbd5c8;
+            border-radius: 6px;
+        }
+
+        .form-pemesanan button {
+            width: 100%;
+            padding: 11px;
+            margin-top: 18px;
+            background-color: #718b70;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .form-pemesanan button:hover {
+            background-color: #526e53;
+        }
+
+        .catatan {
+            font-size: 12px;
+            color: #788579;
+            text-align: center;
+        }
         h2 {
             color: #1e3a5f;
         }
@@ -93,6 +144,42 @@
             dan siap dikirim.
         </p>
     </div>
+<!-- FORMULIR PEMESANAN -->
+    <div class="form-pemesanan">
 
+        <h3>Formulir Pemesanan Tanaman</h3>
+
+        <form onsubmit="alert('Terima kasih! Ini adalah simulasi pemesanan untuk tugas Informatika. Data tidak dikirim atau disimpan.'); return false;">
+
+            <label>Nama Tanaman</label>
+            <select required>
+                <option value="">-- Pilih Tanaman --</option>
+                <option>Monstera</option>
+                <option>Aglaonema</option>
+                <option>Kaktus</option>
+                <option>Peace Lily</option>
+            </select>
+
+            <label>Jumlah Tanaman</label>
+            <input type="number" min="1" max="20"
+                   placeholder="Masukkan jumlah" required>
+
+            <label>Catatan Pesanan</label>
+            <textarea rows="4"
+                      placeholder="Tulis catatan jika ada..."></textarea>
+
+            <button type="submit">
+                Kirim Pesanan
+            </button>
+
+        </form>
+
+        <p class="catatan">
+            Formulir ini hanya simulasi untuk tugas
+            Informatika kelas XI. Tidak ada transaksi
+            atau pengiriman pesanan sungguhan.
+        </p>
+
+    </div>
 </body>
 </html>
